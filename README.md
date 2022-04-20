@@ -18,3 +18,24 @@
    THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
    WHEN I click on a city in the search history
    THEN I am again presented with current and future conditions for that city
+
+
+
+
+
+   <main class="d-flex flex-wrap row main-container">
+        <div class="col-lg-3 col-sm-12 search-container">
+           
+        </div>
+        <div class="col-9 data-container">
+            
+            <section class="forecast-sec">
+                <h2 class="forecast-title title">Five Day Forecast</h2>
+                <div class="card-container">
+        
+                </div>
+            </section>
+        </div>
+       
+
+    </main>

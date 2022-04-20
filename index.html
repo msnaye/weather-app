@@ -13,37 +13,34 @@
     <div class="header" id="header">
         <h1 class="header-title">Weather App</h1>
     </div>
-    <main class="d-flex flex-wrap row main-container">
-        <div class="col-lg-3 col-sm-12 search-container">
-            <h2>Search For a City</h2>
-            <input type="text" class="search-field">
-            <button class="btn btn-primary searchbtn">search</button>
-            <div class="cities"></div>
-        </div>
-        <div class="col-9 data-container">
-            <div class="card p-3">
-                <div class="justify-content-between card-header d-flex">
-                    <h2 class="cityname">City Name</h2>
-                    <h2 class="date"></h2>
+    <div class="hero">
+        <div class="searchContainer row d-flex justify-content-center">
+            <h2 class="col-12 text-center">Search For a City</h2>
+            <div class="row col-12 searchContainerInner d-flex justify-content-center">
+                <input type="text" class="search-field col-5 p-3">
+                <button class="btn btn-primary searchbtn col-1 p-3">search</button>
     
-                </div>
-                <img src="" alt="" class="icon">
-                <h3 class="current-temp info">Temperature</h3>
-                <h3 class="current-humidity info">Humidity</h3>
-                <h3 class="current-windspeed info">Windspeed</h3>
-                <h3 class="current-uvi info">UVI</h3>
-    
-            </div> 
-            <section class="forecast-sec">
-                <h2 class="forecast-title title">Five Day Forecast</h2>
-                <div class="card-container">
-        
-                </div>
-            </section>
+            </div>
+            <div class="cities"></div>  
         </div>
-       
+    </div>
+    
+    <div class="mainContainer d-flex justify-content-center">
+        <div class="card " style="width: 40rem;">
+            <div class="justify-content-between card-header d-flex">
+                <h2 class="cityname">City Name</h2>
+                <h2 class="date"></h2>
+    
+            </div>
+            <img src="" alt="" class="icon">
+            <h3 class="current-temp info">Temperature</h3>
+            <h3 class="current-humidity info">Humidity</h3>
+            <h3 class="current-windspeed info">Windspeed</h3>
+            <h3 class="current-uvi info">UVI</h3>
+    
+        </div> 
 
-    </main>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>

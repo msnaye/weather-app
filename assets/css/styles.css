@@ -1,20 +1,30 @@
 .header{
-    margin-bottom: 1rem;
     padding: 0.5rem;
     background-color: rgb(87, 181, 218);
 }
 .header-title{
     color: rgb(214, 209, 209);
     text-align: center;
+    
 }
 .search-field{
     border-radius: 5px;
     outline: none;
-    width: 90%;
-    margin-left: 1rem;
+    padding:1rem;
 }
 .searchbtn{
-    width: 60%;
-    margin-left: 5rem;
-    margin-top: 1rem;
+    border-radius: 5px;
+    outline: none;
+    padding:1rem; 
+} 
+.hero{
+    margin-bottom: 2rem;
+    background-image: url("https://source.unsplash.com/1600x900/?landscape"); 
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
 }
+ .searchContainer{
+     padding-top: 2rem;
+
+ }

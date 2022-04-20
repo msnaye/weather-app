@@ -21,6 +21,7 @@ function getCordinates (city){
             //displayCordinates(data)
             getCurrent(data[0].lat,data[0].lon)
             displayCityName(data[0].name,data[0].state)
+            getForecast(data[0].lat,data[0].lon)
         })
     })
 }
@@ -32,10 +33,9 @@ function getCordinates (city){
 //https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
 function getCurrent(lat,lon){
     var baseUrl="https://api.openweathermap.org/data/2.5/onecall?"
-    var getLat="lat=" + lat
-    var getLon="&lon=" + lon
+    var getLatLon="lat=" + lat+ "&lon=" + lon
     var restUrl="&units=imperial&exclude=minutely,hourly,daily,alerts&appid="
-    fetch(baseUrl+getLat+getLon+restUrl+apiKey)
+    fetch(baseUrl+getLatLon+restUrl+apiKey)
     .then(function(response){
         //request was successful
         response.json()
@@ -43,6 +43,22 @@ function getCurrent(lat,lon){
             console.log(data);
             //displayCordinates(data)
             displayCurrent(data)
+        })
+    })
+}      
+
+function getForecast(lat,lon){
+    var baseUrl="https://api.openweathermap.org/data/2.5/onecall?"
+    var getLatLon="lat=" + lat+ "&lon=" + lon
+    var restUrl="&units=imperial&exclude=minutely,hourly,current,alerts&appid="
+    fetch(baseUrl+getLatLon+restUrl+apiKey)
+    .then(function(response){
+        //request was successful
+        response.json()
+        .then(function(data){
+            console.log(data);
+            //displayCordinates(data)
+            
         })
     })
 }      
