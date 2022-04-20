@@ -1,5 +1,6 @@
 var searchField =document.querySelector(".search-field");
 var searchBtn =document.querySelector(".searchbtn");
+var ForecastContainer=document.querySelector(".forecastContainer")
 
 searchBtn.addEventListener("click", function(event){
     event.preventDefault();
@@ -58,10 +59,31 @@ function getForecast(lat,lon){
         .then(function(data){
             console.log(data);
             //displayCordinates(data)
-            
         })
     })
-}      
+
+            //for loop for five day forecast
+            function getForecast (lat,lon){
+                var numbers = [0,1,2,3,4,5,6];
+                for(var i=0;i<numbers.length; i++){
+                    
+            console.log(numbers[i]);
+                   
+                   
+                }
+            }
+            
+
+
+        }
+
+    
+        
+    
+     
+//var forecastContainer=function(data){
+
+
   
 function displayCurrent (data){
     var currentTemp=document.querySelector(".current-temp")
