@@ -1,6 +1,7 @@
 var searchField =document.querySelector(".search-field");
 var searchBtn =document.querySelector(".searchbtn");
-var ForecastContainer=document.querySelector(".forecastContainer")
+var forecastContainer=document.querySelector(".forecastCards")
+
 
 searchBtn.addEventListener("click", function(event){
     event.preventDefault();
@@ -58,29 +59,35 @@ function getForecast(lat,lon){
         response.json()
         .then(function(data){
             console.log(data);
-            //displayCordinates(data)
+        
+            displayForecast(data)
         })
     })
 
-            //for loop for five day forecast
-            function getForecast (lat,lon){
-                var numbers = [0,1,2,3,4,5,6];
-                for(var i=0;i<numbers.length; i++){
-                    
-            console.log(numbers[i]);
-                   
-                   
-                }
-            }
-            
+}
 
-
-        }
-
+//for loop for five day forecast
+function displayForecast (data){
     
+    for(var i=1;i<6; i++){
+            var day= document.createElement("div");
+        day.classList.add("card", "col-sm-12", "col-lg-2","m-2","text-center"); 
+        var temp=document.createElement("p");
+        temp.textContent= "Temperature: " + data.daily[i].temp.day;
+        day.appendChild(temp)
         
-    
-     
+        var humidity=document.createElement("p");
+        humidity.textContent= "Humidity: " + data.daily[i].humidity;
+        day.appendChild(humidity)
+        
+        var windspeed=document.createElement("p");
+        windspeed.textContent="Windspeed: " + data.daily[i].wind_speed;
+        day.appendChild(windspeed)
+        forecastContainer.appendChild(day)
+       
+    }
+}
+
 //var forecastContainer=function(data){
 
 
