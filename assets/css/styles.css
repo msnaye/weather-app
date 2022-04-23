@@ -3,7 +3,7 @@
     background-color: rgb(87, 181, 218);
 }
 .header-title{
-    color: rgb(214, 209, 209);
+    color: rgb(31, 29, 29);
     text-align: center;
     
 }
@@ -26,5 +26,9 @@
 }
  .searchContainer{
      padding-top: 2rem;
+     }
+.forecastText {
+    font-size: 1.5rem;
+    color: rgb(29, 28, 28);
+}
 
- }

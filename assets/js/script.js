@@ -68,19 +68,26 @@ function getForecast(lat,lon){
 
 //for loop for five day forecast
 function displayForecast (data){
-    
+    forecastContainer.innerHTML=""
+    var today =moment();
     for(var i=1;i<6; i++){
             var day= document.createElement("div");
         day.classList.add("card", "col-sm-12", "col-lg-2","m-2","text-center"); 
+        var tmr= document.createElement("h4");
+        tmr.textContent= moment().add(i,"days").format("MM.DD.YYYY");
+        day.appendChild(tmr)
         var temp=document.createElement("p");
+        temp.classList.add("bg-info","forecastText")
         temp.textContent= "Temperature: " + data.daily[i].temp.day;
         day.appendChild(temp)
         
         var humidity=document.createElement("p");
         humidity.textContent= "Humidity: " + data.daily[i].humidity;
+        humidity.classList.add("bg-info","forecastText")
         day.appendChild(humidity)
         
         var windspeed=document.createElement("p");
+        windspeed.classList.add("bg-info","forecastText")
         windspeed.textContent="Windspeed: " + data.daily[i].wind_speed;
         day.appendChild(windspeed)
         forecastContainer.appendChild(day)

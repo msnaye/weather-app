@@ -19,23 +19,30 @@
    WHEN I click on a city in the search history
    THEN I am again presented with current and future conditions for that city
 
+## Languages
+
+- HTML
+- CSS
+- JavaScript
+
+## Extensions
+
+[Open Weather API](https://openweathermap.org/api/one-call-api)
+[Bootstrap](https://getbootstrap.com)
+
+## Contact Me
+
+[Github](https://github.com/msnaye)
+[linkedin](https://www.linkedin.com/in/mayra-ibarra-78588588/)
+
+## Screenshot
+
+## Live Website
+
+[Live App](https://msnaye.github.io/weather-app/)
 
 
 
-
-   <main class="d-flex flex-wrap row main-container">
-        <div class="col-lg-3 col-sm-12 search-container">
-           
-        </div>
-        <div class="col-9 data-container">
-            
-            <section class="forecast-sec">
-                <h2 class="forecast-title title">Five Day Forecast</h2>
-                <div class="card-container">
-        
-                </div>
-            </section>
-        </div>
+   
        
 
-    </main>
