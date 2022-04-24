@@ -31,4 +31,10 @@
     font-size: 1.5rem;
     color: rgb(29, 28, 28);
 }
+.cityBtn{
+    margin:0.5rem;
+    padding:0.2rem;
+    border-radius: 10px;
+    background-color: rgb(98, 191, 228);
+}
 

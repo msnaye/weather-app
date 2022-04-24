@@ -1,13 +1,39 @@
 var searchField =document.querySelector(".search-field");
 var searchBtn =document.querySelector(".searchbtn");
-var forecastContainer=document.querySelector(".forecastCards")
+var forecastContainer=document.querySelector(".forecastCards");
+var cityContainer=document.querySelector(".cities");
 
-
+var cities =[]
 searchBtn.addEventListener("click", function(event){
+    cityContainer.innertHTML=""
     event.preventDefault();
     console.log(searchField.value);
-    getCordinates(searchField.value)
+    getCordinates(searchField.value);
+    cities.push(searchField.value);
+
+    //displayCities(searchField.value);
+    for (var i=0; i<cities.length;i++){
+        localStorage.setItem(i,cities[i])
+    }
+    getCities()
+    searchField.value=""
 })
+function getCities(){
+  for (var i=0; i<localStorage.length;i++){
+    var valueId=localStorage.key(i);
+    var cityname=localStorage.getItem(valueId);
+    displayCities(cityname)
+}  
+}
+function displayCities(list){
+    //for(var i=0;i<list.length; i++){
+        //console.log(list[i])
+        var cityBtn=document.createElement("button");
+        cityBtn.classList.add("cityBtn");
+        cityBtn.textContent=list;
+        cityContainer.appendChild(cityBtn);
+
+}
 var apiKey = "5056fb3f5552cba986f4ea65f8eec72e"
 
 function getCordinates (city){
