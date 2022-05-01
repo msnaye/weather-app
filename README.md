@@ -37,6 +37,8 @@
 
 ## Screenshot
 
+![Image](./assets/images/WeatherApp.png)
+
 ## Live Website
 
 [Live App](https://msnaye.github.io/weather-app/)
