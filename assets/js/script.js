@@ -53,7 +53,7 @@ var apiKey = "5056fb3f5552cba986f4ea65f8eec72e"
 
 //function to get cordinates from API
 function getCordinates (city){
-    var baseUrl = "http://api.openweathermap.org/geo/1.0/direct?q="
+    var baseUrl = "https://api.openweathermap.org/geo/1.0/direct?q="
     var restUrl = "&limit=1&appid=5056fb3f5552cba986f4ea65f8eec72e"
     //Make a request to the url 
     fetch(baseUrl + city + restUrl)

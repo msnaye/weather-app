@@ -1,6 +1,17 @@
 # weather-app
 
+## Table of Contents
+
+- [User Story](#User-Story)
+- [Acceptance Criteria](#Acceptance-Criteria)
+- [Languages](#Languages)
+- [Extensions](#Extensions)
+- [Contact Me](#Contact-Me)
+- [Screenshot](#Screenshot)
+- [Live Website](##Live%20website)
+
 ## User Story
+
    AS A traveler
    I WANT to see the weather outlook for multiple cities
    SO THAT I can plan a trip accordingly
