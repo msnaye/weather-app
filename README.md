@@ -8,7 +8,7 @@
 - [Extensions](#Extensions)
 - [Contact Me](#Contact-Me)
 - [Screenshot](#Screenshot)
-- [Live Website](##Live%20website)
+- [Live Website](#Live-Website)
 
 ## User Story
 
